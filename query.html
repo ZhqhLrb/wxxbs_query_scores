@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩查询</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="user-info">
+                <h2 class="user-name">name</h2>
+                <div class="user-number">stunum</div>
+                <div class="header-term">2016-2017上学期</div>
+            </div>
+            <div class="header-btn">
+                <button id="1" class="btn-item">考试查询</button>
+                <button id="2" class="btn-item">补考查询</button>
+                <button id="3" class="btn-item active">成绩查询</button>
+                <div class="btn-bar"></div>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="checkout-wrap" style="left: -20rem;">
+                <!-- 考试查询 -->
+                <div class="content">
+                    <div class="content-item bk-item">
+                        <div class="bk-left">
+                            <div class="bk-name">
+                                name
+                            </div>
+                            <div class="bk-info">
+                                <i class="bk-icon-time"></i>
+                                <span class="bk-data">date</span>
+                                <span class="bk-time">
+                                    time
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bk-right">
+                            <div class="bk-classroom">
+                                <i class="bk-icon-classroom"></i>
+                                <span class="bk-classroom-number">
+                                    place
+                                </span>
+                            </div>
+                            <div class="bk-site">
+                                <i class="bk-site-number"></i>
+                                <span>
+                                    seat
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 补考查询 -->
+                <div class="content">
+                    <div class="content-item bk-item">
+                        <div class="bk-left">
+                            <div class="bk-name">
+                                name
+                            </div>
+                            <div class="bk-info">
+                                <i class="bk-icon-time"></i>
+                                <span class="bk-data">
+                                    date
+                                </span>
+                                <span class="bk-time">
+                                    time
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bk-right">
+                            <div class="bk-classroom">
+                                <i class="bk-icon-classroom"></i>
+                                <span class="bk-classroom-number">
+                                    place
+                                </span>
+                            </div>
+                            <div class="bk-site">
+                                <i class="bk-site-number"></i>
+                                <span>
+                                    seat
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 成绩查询 -->
+                <div class="content">
+                    <div class="content-item score-item">
+                        <div class="class-name">
+                            name
+                        </div>
+                        <div class="class-score exp-score">
+                            score
+                        </div>
+                        <div class="class-sort class-sort-exp">
+                            type
+                        </div>
+                    </div>
+                    <div class="content-item score-item">
+                        <div class="class-name">
+                            name
+                        </div>
+                        <div class="class-score the-score">
+                            score
+                        </div>
+                        <div class="class-sort class-sort-the">
+                            type
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 报错界面 -->
+            <div class="error unerror">
+                <img src="./img/error.png" alt="">
+                <p class="err-info1">检查不到你的信息，</p>
+                <p class="err-info2">请检查绑定或网络状态</p>
+            </div>
+            <!-- 无补考信息 -->
+            <div class="error bk-error">
+                <img src="./img/bkError.png" alt="">
+                <p class="err-info1">您暂时还没有补考消息哦～</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
