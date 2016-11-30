@@ -192,8 +192,8 @@ a {
   line-height: 1;
 }
 .bk-info .bk-time {
-  float: right;
-  margin-right: 2.02666667rem;
+  float: left;
+  margin-left: 0.96rem;
 }
 .bk-right {
   float: left;
