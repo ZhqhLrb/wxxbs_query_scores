@@ -197,6 +197,7 @@ a {
 }
 .bk-right {
   float: right;
+  letter-spacing: -0.02666667rem;
   font-size: 26px;
   color: #666;
 }
@@ -371,7 +372,7 @@ a {
   font-size: 14px;
 }
 [data-dpr='2'] .bk-right {
-  font-size: 26px;
+  font-size: 24px;
 }
 [data-dpr='3'] .bk-right {
   font-size: 36px;
