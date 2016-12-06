@@ -71,7 +71,7 @@ a {
 .checkout-wrap {
   position: relative;
   width: 40rem;
-  transition: left .8s;
+  transition: left .7s;
 }
 .checkout-wrap:before,
 .checkout-wrap:after {
@@ -162,7 +162,7 @@ a {
   float: left;
   width: 6.12rem;
   margin-bottom: 0.30666667rem;
-  line-height: 1;
+  line-height: 1.1;
   font-size: 34px;
   letter-spacing: -1px;
   color: #232323;
@@ -196,9 +196,8 @@ a {
   margin-left: 0.96rem;
 }
 .bk-right {
-  float: left;
+  float: right;
   font-size: 26px;
-  padding-left: 0.85333333rem;
   color: #666;
 }
 .bk-right .bk-classroom {
@@ -267,7 +266,6 @@ a {
   color: #fff;
 }
 .error {
-  display: none;
   width: 10rem;
   font-size: 32px;
   color: #B1CEDF;
